@@ -12,7 +12,10 @@ const PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://dripstorefrontend-g6z3cwo7h-shubham12-profs-projects.vercel.app/",
+    ],
     credentials: true,
   }),
 );
