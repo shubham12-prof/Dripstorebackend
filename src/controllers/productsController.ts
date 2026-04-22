@@ -10,8 +10,13 @@ export const getAllProducts = async (req: Request, res: Response) => {
     });
 
     res.json(products);
-  } catch (error) {
-    res.status(500).json({ message: "Server error" });
+  } catch (error: any) {
+    console.error("Products error full:", error?.message, error?.stack);
+    res.status(500).json({
+      message: "Server error",
+      error: error?.message || "Unknown error",
+      stack: error?.stack || "No stack",
+    });
   }
 };
 
