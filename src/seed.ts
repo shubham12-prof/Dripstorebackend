@@ -21,7 +21,7 @@ const seedProducts = async () => {
         category: "men",
         sizes: ["M", "L", "XL", "XXL"],
         image:
-          "https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=500",
+          "https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=500",
         description: "Stay cozy with this oversized black hoodie.",
         tags: ["hoodie", "winter", "oversized"],
       },
